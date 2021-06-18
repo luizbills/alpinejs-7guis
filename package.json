@@ -1,0 +1,21 @@
+{
+  "name": "alpinejs-7guis",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "dev": "http-server src"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/luizbills/alpinejs-7guis.git"
+  },
+  "author": "Luiz Bills",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/luizbills/alpinejs-7guis/issues"
+  },
+  "homepage": "https://github.com/luizbills/alpinejs-7guis#readme",
+  "dependencies": {
+    "http-server": "^0.12.3"
+  }
+}

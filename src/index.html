@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>7GUIs with AlpineJS</title>
+    <script src="guis/counter.js"></script>
+    <script src="guis/temperature-converter.js"></script>
+    <script src="https://unpkg.com/alpinejs@3" defer></script>
+</head>
+
+<body>
+    <h1>7GUIs in AlpineJS <span x-data x-text="'v' + Alpine.version"></span>
+    </h1>
+
+    <p>This is a version of an implementation of
+        <a href="https://eugenkiss.github.io/7guis/">7GUIs</a>
+        with <a href="https://github.com/alpinejs/alpine">AlpineJS</a>.
+    </p>
+
+    <div x-data="counter">
+        <h2>Counter</h2>
+        <span x-text="value"></span>
+        <button @click="increment">Increment</button>
+    </div>
+
+    <div x-data="temperature-converter">
+        <h2>Temperature Converter</h2>
+
+        <input type="number" @keyup="updateFahrenheit" x-model="celsius">
+        Celsius
+        =
+        <input type="number" @keyup="updateCelsius" x-model="fahrenheit">
+        Fahrenheit
+    </div>
+
+    <div>
+        <h2>Flight Booker</h2>
+        <em>TODO</em>
+    </div>
+
+    <div>
+        <h2>Timer</h2>
+        <em>TODO</em>
+    </div>
+
+    <div>
+        <h2>CRUD</h2>
+        <em>TODO</em>
+    </div>
+
+    <div>
+        <h2>Circle Drawer</h2>
+        <em>TODO</em>
+    </div>
+
+    <div>
+        <h2>Cells</h2>
+        <em>TODO</em>
+    </div>
+</body>
+
+</html>
