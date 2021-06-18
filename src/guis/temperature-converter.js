@@ -5,12 +5,12 @@ document.addEventListener('alpine:initializing', () => {
         init() {
             this.updateFahrenheit();
         },
-        updateCelsius() {
-            this.fahrenheit = parseFloat(this.fahrenheit) || 0;
+        updateCelsius(value) {
+            this.fahrenheit = parseFloat(value) || 0;
             this.celsius = Math.round((this.fahrenheit - 32) * (5 / 9))
         },
-        updateFahrenheit() {
-            this.celsius = parseFloat(this.celsius) || 0;
+        updateFahrenheit(value) {
+            this.celsius = parseFloat(value) || 0;
             this.fahrenheit = Math.round(this.celsius * (9 / 5) + 32)
         }
     }))
