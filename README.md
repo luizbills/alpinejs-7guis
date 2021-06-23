@@ -5,8 +5,6 @@ Implementation of [7GUIs](https://eugenkiss.github.io/7guis/) with [AlpineJS](ht
 # Getting Started
 
 ```
-git clone https://github.com/luizbills/alpinejs-7guis
-cd alpinejs-7guis
 npm install
 npm run dev
 ```
