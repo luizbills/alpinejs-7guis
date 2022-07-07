@@ -1,5 +1,5 @@
 document.addEventListener('alpine:initializing', () => {
-    Alpine.data('temperature-converter', () => ({
+    Alpine.data('temperatureConverter', () => ({
         celsius: 0,
         fahrenheit: 0,
         init() {

@@ -26,7 +26,7 @@
         <button @click="increment">Increment</button>
     </div>
 
-    <div x-data="temperature-converter">
+    <div x-data="temperatureConverter">
         <h2>Temperature Converter</h2>
         <input type="number" @input="updateFahrenheit($event.target.value)" x-model="celsius"> °C =
         <input type="number" @input="updateCelsius($event.target.value)" x-model="fahrenheit"> °F
